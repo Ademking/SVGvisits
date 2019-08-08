@@ -5,13 +5,15 @@ Simple SVG counter - a simple hit counter application with a few lines of code.
 
 # How does this works
 
-In this example i will count the number of hits in my node server, and it's much simpler than you would expect.
+In this example i will count the number of hits in my Node web server, and it's much simpler than you would expect.
 
-There is a <text> element in SVG, so we can show the number of hits using this tag element.
+There is a <text> element in SVG, we can show the number of hits using this tag element.
   
 So the idea is simple :
 
 1. create a simple web server using node, every request we will increment the variable value, and the GET request returns SVG code
+
+Example: 
 
 ```javascript
 var http = require('http');
@@ -34,7 +36,7 @@ console.log('Node.js web server at port 5000 is running..')
 
 ```
 
-2. we will Deploy our app in the server, in my case i'm using "now.sh". After you will get the server URL
+2. we will Deploy our app in the server, in my case i'm using "now.sh". After you will get the server URL. Read more [here](https://zeit.co/now)
 
 3. In your markdown, use the server URL with <img> tag in markdown. In our example :
 
