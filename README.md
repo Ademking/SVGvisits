@@ -13,7 +13,7 @@ So the idea is simple :
 
 1. create a simple web server using node, every request we will increment the variable value, and the GET request returns SVG code
 
-```
+```javascript
 var http = require('http');
 var counter = 0;
 var server = http.createServer(function (req, res) {  
